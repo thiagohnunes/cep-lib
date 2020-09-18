@@ -1,0 +1,13 @@
+package cep.lib.providers.viacep;
+
+import cep.lib.CepResponse;
+import cep.lib.providers.CepProviderService;
+
+public class ViaCepProvider implements CepProviderService {
+    @Override
+    public CepResponse consultar(String cep) {
+        CepResponse value = new CepResponse();
+
+        return value;
+    }
+}
