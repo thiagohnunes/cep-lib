@@ -9,7 +9,7 @@ Como realizar a consulta
 
 ```java
 Cep.Builder builder = new Cep.Builder(CepProvider.VIA_CEP);
-CepResponse response = builder..consultar("38695365");
+CepResponse response = builder.consultar("38695365");
 ```
 
 Objeto retornado
