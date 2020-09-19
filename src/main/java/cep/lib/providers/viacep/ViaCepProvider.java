@@ -6,8 +6,8 @@ import cep.lib.providers.CepProviderService;
 public class ViaCepProvider implements CepProviderService {
     @Override
     public CepResponse consultar(String cep) {
-        CepResponse value = new CepResponse();
+        ViaCepResponse response = new ViaCepClient().findCep(cep);
 
-        return value;
+        return new CepResponse(response);
     }
 }

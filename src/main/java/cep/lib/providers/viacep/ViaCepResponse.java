@@ -12,6 +12,17 @@ public final class ViaCepResponse {
     private String ddd;
     private String siafi;
 
+    public ViaCepResponse(String[] array) {
+        cep = array[3];
+        logradouro = array[7];
+        complemento = array[10];
+        bairro = array[15];
+        localidade = array[19];
+        uf = array[23];
+        ibge = array[27];
+        ddd = array[35];
+    }
+
     public String getCep() {
         return cep;
     }
@@ -94,7 +105,7 @@ public final class ViaCepResponse {
 
     @Override
     public String toString() {
-        return "CepResponse{" +
+        return "ViaCepResponse{" +
                 "cep='" + cep + '\'' +
                 ", logradouro='" + logradouro + '\'' +
                 ", complemento='" + complemento + '\'' +
